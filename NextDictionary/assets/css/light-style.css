@@ -1,0 +1,69 @@
+ @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+:root {
+  --primary-color: #f9f9f9;
+  --secondary-color: #484848;
+  --red-color: #ad1919;
+  --orange-color: #c97f00;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+#dark-mode {
+  margin: 1.5em;
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+input {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 20px #ad1919ac;
+}
+
+.getDef {
+  background-color: #dadada;
+}
+
+input::placeholder {
+  color: #bababa;
+}
+
+.def h1 {
+  color: var(--secondary-color);
+}
+
+#antonym-list {
+  color: #b87c51;
+}
+
+#synonym-list {
+  color: #cfab0a;
+}
+
+#span-phonetic {
+  color: rgba(72, 72, 72, 0.705);
+}
+
+.random-title::before {
+  color: #cd8923fa;
+}
+
+.example {
+  color: var(--secondary-color);
+}
+
+.features-list p > span {
+  color: #e77818;
+}
