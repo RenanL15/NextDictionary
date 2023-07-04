@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/next-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="" id="original-css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <audio src="" id="audio"></audio>
+    <script
+      src="https://kit.fontawesome.com/3552f262a9.js"
+      crossorigin="anonymous"></script>
+    <title>NextDictionary</title>
+  </head>
+  <body>
+    <nav>
+      <div class="light-dark">
+        <img
+          src="./assets/images/sun.png"
+          id="light-mode"
+          alt="light-mode"
+          width="50px"
+          onclick="lightMode()" />
+      </div>
+    </nav>
+    <div class="form-container">
+      <form class="form" onsubmit="getDefinition()">
+        <img
+          src="./assets/images/next-dictionary-logo-2.png"
+          alt="next-dictionary-logo"
+          id="next-dictionary-logo"
+          width="400px"
+          srcset="" />
+        <div class="input-field">
+          <input
+            type="text"
+            id="word"
+            placeholder="Enter a word"
+            autofocus
+            autocomplete="off" />
+          <div class="getDef">
+            <i class="fa-solid fa-play" id="play" onclick="getDefinition()"></i>
+          </div>
+        </div>
+        <div class="def">
+          <div class="title">
+          </div>
+          <p id="definition"></p>
+          <div class="features-icons"></div>
+          <div class="tooltips"></div>
+          <div class="features-list"> </div>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/js/random.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/light-dark.js"></script>
+  </body>
+</html>
